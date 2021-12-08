@@ -77,6 +77,9 @@
                                         <a class="nav-link" href="inputdata.php">Tambah Data</a>
                                     </li>
                                     <li class="nav-item">
+                                        <a class="nav-link" href="tambahsaldo.php">TopUp Saldo</a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a class="nav-link" href="register.php">Tambah User</a>
                                     </li>
                                 </ul>

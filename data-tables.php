@@ -72,6 +72,9 @@
                                         <a class="nav-link" href="inputdata.php">Tambah Data</a>
                                     </li>
                                     <li class="nav-item">
+                                        <a class="nav-link" href="tambahsaldo.php">TopUp Saldo</a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a class="nav-link" href="register.php">Tambah User</a>
                                     </li>
                                 </ul>
@@ -130,7 +133,7 @@
                                         <tbody>
                                             <?php
                                             
-                                                $datatampil = mysqli_query($koneksi, "SELECT * FROM `tb_daftarrfid` as a join tb_simpan as b on a.rfid = b.rfid ORDER BY no DESC");
+                                                  $datatampil = mysqli_query($koneksi, "SELECT a.rfid, a.tanggal, b.nama, b.alamat, b.telepon, a.saldoawal, a.harga, a.saldoakhir, a.tol FROM `tb_simpan` as a left join tb_daftarrfid as b on a.rfid = b.rfid ORDER BY no DESC");
                                                 $no=1;
                                                 if (is_array($datatampil) || is_object($datatampil)){
                                                     foreach ($datatampil as $row){

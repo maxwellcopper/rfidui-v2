@@ -77,9 +77,6 @@
                                         <a class="nav-link" href="inputdata.php">Tambah Data</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="tambahsaldo.php">TopUp Saldo</a>
-                                    </li>
-                                    <li class="nav-item">
                                         <a class="nav-link" href="register.php">Tambah User</a>
                                     </li>
                                 </ul>
@@ -119,7 +116,7 @@
                         <div class="card">
                             <div class="card-body">
                        
-                                <form action="action-input-data.php" method="POST" name="form-input-data">
+                                <form action="action-tambah-saldo.php" method="POST" name="form-input-data">
 
                                     <div class="form-group">
                                         <label for="rfid">RFID</label>
@@ -135,27 +132,11 @@
                                             <?php
                                             }
                                         ?>
-                                        <a href="inputdata.php?getRFID=true" class="btn btn-link">Get RFID</a>
+                                        <a href="tambahsaldo.php?getRFID=true" class="btn btn-link">Get RFID</a>
                                     </div>
-
                                     <div class="form-group">
-                                        <label for="nama">Nama</label>
-                                        <input type="text" class="form-control" name="nama" placeholder="Masukan nama">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="alamat">Alamat</label>
-                                        <textarea name="alamat" cols="30" rows="5" class="form-control" placeholder="Masukan alamat"></textarea>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="telepon">Telepon</label>
-                                        <input type="text" class="form-control" name="telepon" placeholder="Masukan telepon">
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label for="saldo">Saldo Awal</label>
-                                        <input type="text" class="form-control" name="saldo" placeholder="Masukan Saldo Awal">
+                                        <label for="saldo">TopUp</label>
+                                        <input type="text" class="form-control" name="saldo" placeholder="Masukan Jumlah TopUp">
                                     </div>
 
                                     <input type="submit" name="Submit" value="Submit" class="btn btn-primary">
@@ -197,7 +178,7 @@
 
     <script>
         function cancelSubmit(){
-            window.location="inputdata.php";
+            window.location="tambahsaldo.php";
         }
     </script>
 
